@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlueHaven Realty | Find Your Dream Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-slate-800 antialiased">
+
+    <!-- Top Info Bar -->
+    <div class="bg-slate-900 text-slate-300 text-xs py-2 px-6 border-b border-slate-800">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-2">
+            <div class="flex items-center space-x-6">
+                <span><i class="fa-solid fa-envelope text-emerald-400 mr-1.5"></i> hello@bluehavenrealty.example</span>
+                <span><i class="fa-solid fa-phone text-emerald-400 mr-1.5"></i> +91 98765 43210</span>
+                <span class="hidden lg:inline"><i class="fa-solid fa-location-dot text-emerald-400 mr-1.5"></i> Sapphire Plaza, MG Road, Patna</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <span class="text-slate-400">Follow us:</span>
+                <a href="#" class="hover:text-emerald-400"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-emerald-400"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-emerald-400"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#" class="hover:text-emerald-400"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation -->
+    <nav class="bg-white sticky top-0 z-50 shadow-sm border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <div class="w-9 h-9 bg-emerald-600 rounded-lg flex items-center justify-center text-white text-lg font-bold">
+                    <i class="fa-solid fa-house-chimney"></i>
+                </div>
+                <span class="text-2xl font-extrabold text-slate-900 tracking-tight">BlueHaven <span class="text-emerald-600">Realty</span></span>
+            </a>
+
+            <div class="hidden lg:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+                <a href="#home" class="text-emerald-600">Home</a>
+                <a href="#properties" class="hover:text-emerald-600 transition">Buy</a>
+                <a href="#properties" class="hover:text-emerald-600 transition">Rent</a>
+                <a href="#services" class="hover:text-emerald-600 transition">Services</a>
+                <a href="#about" class="hover:text-emerald-600 transition">About Us</a>
+                <a href="#contact" class="hover:text-emerald-600 transition">Contact</a>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <a href="#contact" class="hidden sm:flex items-center space-x-1.5 text-slate-700 hover:text-emerald-600 font-semibold text-sm">
+                    <i class="fa-regular fa-heart text-lg"></i>
+                </a>
+                <a href="#contact" class="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-semibold px-5 py-2.5 rounded-lg transition flex items-center gap-2">
+                    <i class="fa-solid fa-plus text-xs"></i> List Your Property
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative pt-12 pb-20 px-6 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            
+            <div class="space-y-6">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 leading-[1.15]">
+                    Find Your Dream Home <br><span class="text-emerald-600">Live Your Best Life</span>
+                </h1>
+                <p class="text-slate-500 text-base md:text-lg leading-relaxed max-w-lg">
+                    Explore verified apartments, independent houses, commercial hubs and plots across Patna, Gaya, Muzaffarpur, and Nalanda.
+                </p>
+                
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#properties" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-7 py-3.5 rounded-lg text-sm transition shadow-lg shadow-emerald-600/20 flex items-center gap-2">
+                        Explore Properties <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <a href="#about" class="border border-slate-300 hover:bg-slate-100 text-slate-700 font-semibold px-6 py-3.5 rounded-lg text-sm transition flex items-center gap-2">
+                        <i class="fa-regular fa-circle-play text-emerald-600 text-base"></i> How It Works
+                    </a>
+                </div>
+
+                <!-- Trust Badge -->
+                <div class="pt-6 flex items-center space-x-4 border-t border-slate-200/80">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Client">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Client">
+                        <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="Client">
+                        <div class="w-10 h-10 rounded-full border-2 border-white bg-emerald-600 text-white text-xs font-bold flex items-center justify-center">+</div>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-900">Trusted by 10,000+ happy clients</p>
+                        <p class="text-xs text-slate-500">Lead Consultant: Arjun Mehta</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Hero Image with Floating Card -->
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="Modern House" class="rounded-3xl shadow-2xl w-full object-cover h-[480px]">
+                
+                <!-- Floating Price Card -->
+                <div class="absolute bottom-6 right-6 bg-white/95 backdrop-blur-md p-4 rounded-2xl shadow-xl border border-slate-100 flex items-center space-x-4 max-w-xs">
+                    <div class="w-10 h-10 bg-emerald-100 text-emerald-600 rounded-xl flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-building"></i>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-slate-900 text-sm">3 BHK House</h4>
+                        <p class="text-xs text-slate-500">Bailey Road, Patna</p>
+                        <p class="text-emerald-600 font-extrabold text-sm mt-0.5">₹82,00,000</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Filter Search Bar -->
+        <div class="mt-12 bg-white rounded-2xl shadow-xl border border-slate-100 p-4 md:p-6 grid grid-cols-1 md:grid-cols-5 gap-4">
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Location</label>
+                <select class="w-full text-slate-800 font-semibold text-sm focus:outline-none bg-transparent">
+                    <option>Patna, Bihar</option>
+                    <option>Gaya</option>
+                    <option>Muzaffarpur</option>
+                    <option>Darbhanga</option>
+                    <option>Hajipur</option>
+                    <option>Nalanda</option>
+                </select>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Property Type</label>
+                <select class="w-full text-slate-800 font-semibold text-sm focus:outline-none bg-transparent">
+                    <option>Any Type</option>
+                    <option>Apartments & Flats</option>
+                    <option>Independent Houses</option>
+                    <option>Office Spaces</option>
+                    <option>Residential Plots</option>
+                </select>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Price Range</label>
+                <select class="w-full text-slate-800 font-semibold text-sm focus:outline-none bg-transparent">
+                    <option>₹30 Lakhs - ₹1.5 Crore</option>
+                    <option>Under ₹50 Lakhs</option>
+                    <option>₹50 Lakhs - ₹1 Crore</option>
+                    <option>Above ₹1 Crore</option>
+                </select>
+            </div>
+            <div class="border-b md:border-b-0 md:border-r border-slate-100 pb-3 md:pb-0 md:pr-4">
+                <label class="block text-xs font-bold text-slate-400 uppercase mb-1">Beds & Baths</label>
+                <select class="w-full text-slate-800 font-semibold text-sm focus:outline-none bg-transparent">
+                    <option>Any Beds / Baths</option>
+                    <option>2 BHK (2 Bath)</option>
+                    <option>3 BHK (3 Bath)</option>
+                </select>
+            </div>
+            <div class="flex items-center">
+                <button class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-bold py-3.5 px-6 rounded-xl text-sm transition shadow-md shadow-emerald-600/20 flex items-center justify-center gap-2">
+                    Search Properties <i class="fa-solid fa-magnifying-glass text-xs"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore Property Types -->
+    <section class="py-16 px-6 max-w-7xl mx-auto">
+        <div class="flex justify-between items-end mb-10">
+            <div>
+                <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Explore Property Types</h2>
+                <p class="text-slate-500 text-sm mt-1">Get started by browsing your preferred category.</p>
+            </div>
+            <a href="#properties" class="text-emerald-600 hover:text-emerald-700 font-bold text-sm flex items-center gap-1">
+                View All <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-building"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Apartments</h4>
+                <p class="text-xs text-slate-400 mt-0.5">BH-1001 & Flats</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-house"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Houses</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Independent Homes</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-vihara"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Villas</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Gated Premises</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-briefcase"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Offices</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Commercial Hubs</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Retail Shops</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Market Locations</p>
+            </div>
+
+            <div class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition text-center group cursor-pointer">
+                <div class="w-12 h-12 bg-emerald-50 text-emerald-600 rounded-xl flex items-center justify-center text-xl mx-auto mb-3 group-hover:bg-emerald-600 group-hover:text-white transition">
+                    <i class="fa-solid fa-map"></i>
+                </div>
+                <h4 class="font-bold text-slate-900 text-sm">Plots & Land</h4>
+                <p class="text-xs text-slate-400 mt-0.5">Residential Plots</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Properties -->
+    <section id="properties" class="py-16 bg-slate-100/60 border-y border-slate-200/60 px-6">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex justify-between items-end mb-10">
+                <div>
+                    <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900">Featured Properties</h2>
+                    <p class="text-slate-500 text-sm mt-1">Handpicked prime listings available for buying & commercial leasing.</p>
+                </div>
+                <a href="#contact" class="text-emerald-600 hover:text-emerald-700 font-bold text-sm flex items-center gap-1">
+                    View All Properties <i class="fa-solid fa-arrow-right text-xs"></i>
+                </a>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Listing 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase">For Sale</span>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center text-slate-600 text-xs shadow-md"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-slate-900 text-base">2 BHK Apartment</h3>
+                        <p class="text-slate-400 text-xs mt-1"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Kankarbagh, Patna</p>
+                        <div class="text-xl font-extrabold text-emerald-600 my-3">₹48,50,000</div>
+                        <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                            <span><i class="fa-solid fa-bed mr-1"></i> 2 Beds</span>
+                            <span><i class="fa-solid fa-bath mr-1"></i> 2 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined mr-1"></i> 1,050 sq.ft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase">For Sale</span>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center text-slate-600 text-xs shadow-md"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-slate-900 text-base">3 BHK Independent House</h3>
+                        <p class="text-slate-400 text-xs mt-1"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Bailey Road, Patna</p>
+                        <div class="text-xl font-extrabold text-emerald-600 my-3">₹82,00,000</div>
+                        <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                            <span><i class="fa-solid fa-bed mr-1"></i> 3 Beds</span>
+                            <span><i class="fa-solid fa-bath mr-1"></i> 3 Baths</span>
+                            <span><i class="fa-solid fa-ruler-combined mr-1"></i> 1,850 sq.ft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase">For Rent</span>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center text-slate-600 text-xs shadow-md"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-slate-900 text-base">Commercial Office Space</h3>
+                        <p class="text-slate-400 text-xs mt-1"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Fraser Road, Patna</p>
+                        <div class="text-xl font-extrabold text-emerald-600 my-3">₹1.15 Crore</div>
+                        <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                            <span><i class="fa-solid fa-building mr-1"></i> 4th Floor</span>
+                            <span><i class="fa-solid fa-ruler-combined mr-1"></i> 2,200 sq.ft</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Listing 4 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100 group">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=600&q=80" class="h-48 w-full object-cover group-hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-emerald-600 text-white text-[11px] font-bold px-2.5 py-1 rounded-md uppercase">For Sale</span>
+                        <button class="absolute top-3 right-3 w-8 h-8 bg-white/80 hover:bg-white rounded-full flex items-center justify-center text-slate-600 text-xs shadow-md"><i class="fa-regular fa-heart"></i></button>
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-bold text-slate-900 text-base">Residential Plot</h3>
+                        <p class="text-slate-400 text-xs mt-1"><i class="fa-solid fa-location-dot text-emerald-600 mr-1"></i> Near Airport Road, Gaya</p>
+                        <div class="text-xl font-extrabold text-emerald-600 my-3">₹32,00,000</div>
+                        <div class="flex items-center justify-between text-xs text-slate-500 pt-3 border-t border-slate-100">
+                            <span><i class="fa-solid fa-vector-square mr-1"></i> Land Plot</span>
+                            <span><i class="fa-solid fa-ruler-combined mr-1"></i> 2,400 sq.ft</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose BlueHaven -->
+    <section id="services" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center max-w-2xl mx-auto mb-16">
+            <h2 class="text-3xl font-extrabold text-slate-900">Why Choose BlueHaven Realty?</h2>
+            <p class="text-slate-500 text-sm mt-2">Straightforward guidance throughout your property buying, selling, and leasing process.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-circle-check"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">Verified Listings</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">All properties are checked for clear titles & verified documentation.</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-indian-rupee-sign"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">Best Price Market</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Fair valuation & honest market prices for buyers and sellers alike.</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-user-shield"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">Expert Guidance</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Personalized assistance led directly by Arjun Mehta.</p>
+            </div>
+
+            <div class="p-6 bg-white rounded-2xl border border-slate-100 shadow-sm text-center">
+                <div class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mx-auto mb-4">
+                    <i class="fa-solid fa-paste"></i>
+                </div>
+                <h3 class="font-bold text-slate-900 text-base mb-2">Easy Documentation</h3>
+                <p class="text-xs text-slate-500 leading-relaxed">Complete support for agreement paperwork & site visits.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-slate-50 border-t border-slate-200/80 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl md:text-3xl font-extrabold text-slate-900 text-center mb-12">What Our Clients Say</h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+                    <div class="text-emerald-500 text-2xl"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-xs text-slate-600 leading-relaxed">"BlueHaven Realty made buying our 2 BHK apartment in Kankarbagh smooth and hassle-free. Exceptional service!"</p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-xs">Aarti Sharma</h4>
+                            <p class="text-[10px] text-slate-400">Patna, Bihar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+                    <div class="text-emerald-500 text-2xl"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-xs text-slate-600 leading-relaxed">"Found a commercial office space on Fraser Road quickly. Arjun Mehta gave us direct and transparent guidance."</p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-xs">Rajesh Verma</h4>
+                            <p class="text-[10px] text-slate-400">Gaya, Bihar</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm space-y-4">
+                    <div class="text-emerald-500 text-2xl"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-xs text-slate-600 leading-relaxed">"Best experience selling my property in Bailey Road. Transparent paperwork and got the right value!"</p>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" class="w-10 h-10 rounded-full object-cover">
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-xs">Sunita Kumari</h4>
+                            <p class="text-[10px] text-slate-400">Muzaffarpur, Bihar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Get Updates Banner -->
+    <section class="max-w-7xl mx-auto px-6 py-12">
+        <div class="bg-slate-900 rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row justify-between items-center gap-8">
+            <div class="text-white space-y-2 text-center lg:text-left">
+                <h3 class="text-2xl md:text-3xl font-extrabold">Get Exclusive Property Updates</h3>
+                <p class="text-slate-400 text-sm">Subscribe to get notified about new property listings in Patna & Gaya.</p>
+            </div>
+            <div class="w-full lg:w-auto flex flex-col sm:flex-row gap-3">
+                <input type="email" placeholder="Enter your email address" class="bg-slate-800 text-white placeholder-slate-500 border border-slate-700 px-5 py-3.5 rounded-xl text-sm focus:outline-none focus:border-emerald-500 w-full sm:w-80">
+                <button class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-7 py-3.5 rounded-xl text-sm transition">Subscribe</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact" class="bg-slate-950 text-slate-400 pt-16 pb-8 px-6 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 text-xs pb-12 border-b border-slate-900">
+            
+            <div class="lg:col-span-2 space-y-4">
+                <a href="#" class="flex items-center space-x-2">
+                    <div class="w-8 h-8 bg-emerald-600 rounded-lg flex items-center justify-center text-white text-base font-bold">
+                        <i class="fa-solid fa-house-chimney"></i>
+                    </div>
+                    <span class="text-xl font-extrabold text-white tracking-tight">BlueHaven <span class="text-emerald-500">Realty</span></span>
+                </a>
+                <p class="text-slate-400 leading-relaxed max-w-sm">
+                    BlueHaven Realty is a full-service real estate agency specializing in residential and commercial properties across Patna, Gaya, Muzaffarpur, Darbhanga, Hajipur, and Nalanda.
+                </p>
+                <p class="text-slate-300 font-semibold">Owner: Arjun Mehta</p>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-sm mb-4">Quick Links</h4>
+                <ul class="space-y-2.5">
+                    <li><a href="#home" class="hover:text-emerald-400">Home</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Buy Property</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Rent Space</a></li>
+                    <li><a href="#services" class="hover:text-emerald-400">Services</a></li>
+                    <li><a href="#about" class="hover:text-emerald-400">About Us</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-sm mb-4">Property Types</h4>
+                <ul class="space-y-2.5">
+                    <li><a href="#properties" class="hover:text-emerald-400">Apartments & Flats</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Independent Houses</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Office Spaces</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Residential Plots</a></li>
+                    <li><a href="#properties" class="hover:text-emerald-400">Commercial Buildings</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-white text-sm mb-4">Contact Us</h4>
+                <div class="space-y-3">
+                    <p><i class="fa-solid fa-location-dot text-emerald-500 mr-2"></i> 2nd Floor, Sapphire Plaza, MG Road, Patna, Bihar 800001</p>
+                    <p><i class="fa-solid fa-phone text-emerald-500 mr-2"></i> +91 98765 43210</p>
+                    <p><i class="fa-solid fa-envelope text-emerald-500 mr-2"></i> hello@bluehavenrealty.example</p>
+                    <p><i class="fa-solid fa-clock text-emerald-500 mr-2"></i> Mon-Sat: 9:30 AM - 6:30 PM | Sun: 10:00 AM - 2:00 PM</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Developer Credit Bottom Bar -->
+        <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500 gap-4">
+            <div>
+                &copy; 2026 BlueHaven Realty. All rights reserved.
+            </div>
+            <div class="flex items-center space-x-1">
+                <span>Designed & Developed by</span>
+                <span class="font-bold text-emerald-400 uppercase tracking-wider pl-1">JOHN</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
